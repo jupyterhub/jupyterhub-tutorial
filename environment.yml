@@ -1,0 +1,12 @@
+name: jupyterhub-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python == 3.5
+  - jupyterhub == 0.6.1
+  - notebook >= 4.2
+  - ipykernel >= 4.3
+  - pip:
+    - oauthenticator
+    - dockerspawner
+
