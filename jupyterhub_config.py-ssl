@@ -1,0 +1,5 @@
+# Configuration file for jupyterhub.
+
+c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
+c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
+c.JupyterHub.port = 443
