@@ -1,0 +1,4 @@
+# Create these values: https://github.com/settings/applications/new
+export GITHUB_CLIENT_ID=from_github
+export GITHUB_CLIENT_SECRET=also_from_github
+export OAUTH_CALLBACK_URL=https://[YOURDOMAIN]/hub/oauth_callback
