@@ -9,4 +9,4 @@ dependencies:
   - pip:
     - oauthenticator
     - dockerspawner
-
+    - netifaces
