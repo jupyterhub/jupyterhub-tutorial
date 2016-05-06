@@ -6,7 +6,7 @@ Follow along: http://minrk.github.io/jupyterhub-pydata-2016, or with [the PDF](.
 
 Clone this repo:
 
-    git clone http://github.com/minrk/jupyterhub-pydata-2016 /srv/jupyterhub
+    git clone https://github.com/minrk/jupyterhub-pydata-2016 /srv/jupyterhub
 
 You will need:
 
