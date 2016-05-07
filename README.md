@@ -3,6 +3,7 @@
 at PyData London 2016
 
 Follow along: http://minrk.github.io/jupyterhub-pydata-2016, or with [the PDF](./JupyterHub.pdf)
+or watch [the video on YouTube](https://www.youtube.com/watch?v=LkgSCjyv75s).
 
 Clone this repo:
 
