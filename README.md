@@ -1,13 +1,14 @@
-# JupyterHub tutorial
+# Getting Started with JupyterHub tutorial
 
-at PyData London 2016
+Based on a tutorial at PyData London 2016
+by Min Ragan-Kelly*, Thomas Kluyver, and Kyle Kelley.
 
-Follow along: http://minrk.github.io/jupyterhub-pydata-2016, or with [the PDF](./JupyterHub.pdf)
+Follow along with [the PDF](./JupyterHub.pdf)
 or watch [the video on YouTube](https://www.youtube.com/watch?v=LkgSCjyv75s).
 
 Clone this repo:
 
-    git clone https://github.com/minrk/jupyterhub-pydata-2016 /srv/jupyterhub
+    git clone https://github.com/{{ insert repo here }} /srv/jupyterhub
 
 You will need:
 
