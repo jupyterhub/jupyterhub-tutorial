@@ -15,6 +15,7 @@
 
 import sys
 import os
+import recommonmark.parser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -33,15 +34,21 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
+    'IPython.sphinxext.ipython_console_highlighting',
+    'nbsphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+source_parsers = {
+    '.md': 'recommonmark.parser.CommonMarkParser',
+}
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md', '.ipynb']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
