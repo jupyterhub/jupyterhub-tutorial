@@ -1,8 +1,9 @@
 # Timeline of tutorial video
 
-YouTube https://youtu.be/LkgSCjyv75s
+[PyData London 2016 YouTube Video](https://youtu.be/LkgSCjyv75s)
 
-0:00 Welcome and Intro
+
+0:00:00 Welcome and Intro
 
 0:01:00 GitHub repo that accompanies the talk
 
@@ -28,77 +29,87 @@ YouTube https://youtu.be/LkgSCjyv75s
 
 0:11:18 Installation: Caveats
 
-0:12:18 conda-forge - community maintained conda packages
-   Add conda-forge to default conda sources
+0:12:18 conda-forge
 
-0:13:38 Installation docker (later on)
+- community maintained conda packages
+- Add conda-forge to default conda sources
+
+0:13:38 Installation docker (covered later on)
 
 0:14:18 JupyterHub Defaults
-    Default behavior
-    Auth: PAM
-    Spawning: Local users
-    Hub run as root (alternative: sudospawner is fraught with peril)
+
+- Default behavior
+- Auth: PAM
+- Spawning: Local users
+- Hub run as root (alternative: sudospawner is fraught with peril)
 
 0:15:12 Type jupyterhub in terminal
-    jupyterhub SSL
 
-    If you want to run without SSL.
+- message returned that the hub will not start since there is no SSL provisioned
+- If you want to run without SSL, do so at your own risk.
 
 0:16:26 SSL
-    self signed cert
 
-    Let's Encrypt 17:30
+- Use a self signed cert
+- Let's Encrypt 0:17:30
 
 0:18:12 Configure jupyterhub
-    create file
-    edit file 19:12
+
+- create file
+- edit config file 0:19:12
 
 0:20:33 Connect to hub publicly
-    login, spawn server, redirect
-    control panel 21:20 elaborate!
 
-21:52 Installing kernels for all users
+- login, spawn server, redirect
+- control panel 0:21:20
 
-24:15 Using GitHub OAuth
-    We have simple PAM; tell server to use GitHub OAuth
-    Authorization callback URL
-    Client ID
-    Client Secret
+0:21:52 Installing kernels for all users
 
-    ./env -> export the variables
+0:24:15 Using GitHub OAuth
 
-30:44 Tell Jupyter to use oauthenticator
+- We have simple PAM; tell server to use GitHub OAuth
+- Authorization callback URL
+- Client ID
+- Client Secret
 
-32:48 Sign in with GitHub
+- ./env -> export the variables
 
-34:20 Specifying users
-    PAM ok
-    GitHub probably not ok
-    user whitelist - python set
-    admin users - python set
+0:30:44 Tell Jupyter to use oauthenticator
 
-36:26 Jupyterhub Custom Authenticators
-    PAM - form based fairly simple
-    Secure Authenticator
-    jupyterhub hashing salted functions
+0:32:48 Sign in with GitHub
 
-42:14 Using DockerSpawner
-    netifaces convenience thing
-    local GH to general GH users
-    GH - DockerSpawner
-    and whitelist
+0:34:20 Specifying users
 
-44:00 Initially missing piece Hub API if cookie is valid
-    docker0 ip address netifaces
+- PAM ok
+- GitHub probably not ok
+- user whitelist - put in a python set in config file
+- admin users - put in a python set in config file
 
-48:00 Lots you can do with DockerSpawner
+0:36:26 Jupyterhub Custom Authenticators
 
-51:19 Customizing JupyterHub Spawners
-   Start my server goes to a form
+- PAM - form based fairly simple
+- Secure Authenticator
+- jupyterhub hashing salted functions
 
-1:07 JupyterHub with supervisor
+0:42:14 Using DockerSpawner
 
-1:09 Reference deployments
+- netifaces - python convenience library
+- local GH to general GH users
+- GH - DockerSpawner and whitelist
+
+0:44:00 Initially missing piece Hub API if cookie is valid
+
+- docker0 ip address netifaces
+
+0:48:00 Lots you can do with DockerSpawner
+
+0:51:19 Customizing JupyterHub Spawners
+
+- Start my server goes to a form
+
+1:07:00 JupyterHub with supervisor
+
+1:09:00 Reference deployments
 
 1:11:00 Q & A
 
