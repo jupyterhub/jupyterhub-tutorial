@@ -6,6 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   JupyterHub-Tutorial.ipynb
    timeline.md
    authenticators.ipynb
    spawners.ipynb
