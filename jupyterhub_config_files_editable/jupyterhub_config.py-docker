@@ -18,7 +18,7 @@ c.Authenticator.whitelist = {'USER_1', 'USER_2'}
 
 # Administrators - set of users who can administer the Hub itself
 # ---> Replace 'ADMIN_1' with an administrator user name i.e 'minrk'
-c.Authenticator.admin_users = {'ADMIN1'}
+c.Authenticator.admin_users = {'ADMIN_1'}
 
 # Authenticator
 from oauthenticator.github import GitHubOAuthenticator
