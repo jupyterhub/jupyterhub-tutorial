@@ -8,7 +8,7 @@ or watch [the video on YouTube](https://www.youtube.com/watch?v=LkgSCjyv75s).
 
 Clone this repo:
 
-    git clone https://github.com/{{ insert repo here }} /srv/jupyterhub
+    git clone https://github.com/jupyterhub/jupyterhub-tutorial /srv/jupyterhub
 
 You will need:
 
