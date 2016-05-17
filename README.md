@@ -4,7 +4,7 @@ Based on a tutorial at PyData London 2016
 by Min Ragan-Kelley*, Thomas Kluyver, and Kyle Kelley.
 
 Follow along with [the PDF](./JupyterHub.pdf)
-or watch [the video on YouTube](https://www.youtube.com/watch?v=LkgSCjyv75s).
+or watch [the video on YouTube](https://youtu.be/gSVvxOchT8Y).
 
 Clone this repo:
 
