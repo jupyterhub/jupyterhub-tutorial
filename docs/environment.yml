@@ -1,0 +1,9 @@
+name: tutorial_docs
+dependencies:
+- python=3.5
+- sphinx_rtd_theme
+- ipython
+- pip:
+  - sphinx
+  - nbsphinx
+  - recommonmark
