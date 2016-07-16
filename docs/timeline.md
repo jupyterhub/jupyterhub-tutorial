@@ -2,7 +2,7 @@
 
 [PyData London 2016 YouTube Video](https://youtu.be/gSVvxOchT8Y)
 
-## Introduction to Jupyter notebooks and JupyterHub 
+## Introduction to Jupyter notebooks and JupyterHub
 
 0:00:00 Welcome and Intro
 
@@ -26,6 +26,8 @@
 
 0:07:17 Browser to ask hub for auth
 
+[Additional reading for overview] (http://jupyterhub.readthedocs.io/en/latest/getting-started.html#overview)
+
 ## Installation of JupyterHub
 
 0:07:56 Installation (as admin)
@@ -40,6 +42,8 @@
 - Add conda-forge to default conda sources
 
 0:13:38 Installation docker (covered later on)
+
+[Installation instructions can be found under Prerequisites and Installation](https://github.com/jupyterhub/jupyterhub/blob/master/README.md)
 
 ## Configuring JupyterHub
 
@@ -123,4 +127,3 @@
 1:11:00 Q & A
 
 1:13:00 Simula deployment with persistence in Hub
-
