@@ -2,7 +2,7 @@
 
 [PyData London 2016 YouTube Video](https://youtu.be/gSVvxOchT8Y)
 
-## Introduction to Jupyter notebooks and JupyterHub 
+## Introduction to Jupyter notebooks and JupyterHub
 
 0:00:00 Welcome and Intro
 
@@ -70,7 +70,7 @@
 - login, spawn server, redirect
 - control panel 0:21:20
 
-## Assign
+## Authenticators
 
 0:21:52 Installing kernels for all users
 
@@ -100,6 +100,8 @@
 - Secure Authenticator
 - jupyterhub hashing salted functions
 
+## Spawning Processes
+
 0:42:14 Using DockerSpawner
 
 - netifaces - python convenience library
@@ -123,4 +125,3 @@
 1:11:00 Q & A
 
 1:13:00 Simula deployment with persistence in Hub
-
