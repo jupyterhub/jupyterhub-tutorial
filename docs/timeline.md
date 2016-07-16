@@ -2,6 +2,7 @@
 
 [PyData London 2016 YouTube Video](https://youtu.be/gSVvxOchT8Y)
 
+## Introduction to Jupyter notebooks and JupyterHub 
 
 0:00:00 Welcome and Intro
 
@@ -10,6 +11,8 @@
 0:01:44 What is the Notebook?
 
 0:03:00 What is a Notebook Server?
+
+## Overview of JupyterHub
 
 0:04:17 JupyterHub
 
@@ -23,6 +26,8 @@
 
 0:07:17 Browser to ask hub for auth
 
+## Installation of JupyterHub
+
 0:07:56 Installation (as admin)
 
 0:10:44 Installation (this repo)
@@ -35,6 +40,8 @@
 - Add conda-forge to default conda sources
 
 0:13:38 Installation docker (covered later on)
+
+## Configuring JupyterHub
 
 0:14:18 JupyterHub Defaults
 
@@ -62,6 +69,8 @@
 
 - login, spawn server, redirect
 - control panel 0:21:20
+
+## Assign
 
 0:21:52 Installing kernels for all users
 
