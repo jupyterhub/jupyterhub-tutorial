@@ -1,13 +1,25 @@
 Getting Started with JupyterHub Tutorial
 ========================================
 
-Contents:
+This tutorial is based on Min Ragan Kelly's PyData London talk 
+`(Video)<https://youtu.be/gSVvxOchT8Y>`_.
+
+JupyterHub References
+---------------------
 
 .. toctree::
    :maxdepth: 2
 
-   JupyterHub-Tutorial.ipynb
+   jhubcheatsheet.md
    timeline.md
+   
+Tutorial notebooks
+------------------
+   
+.. toctree::
+   :maxdepth: 2
+   
+   JupyterHub-Tutorial.ipynb
    authenticators.ipynb
    spawners.ipynb
    rest-api.ipynb
