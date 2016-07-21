@@ -1,7 +1,7 @@
 # JupyterHub Cheatsheet
 
 ## JupyterHub on GitHub
-JupyterHub organization on GitHub [https://github.com/jupyterhub]()
+JupyterHub organization on GitHub [https://github.com/jupyterhub](https://github.com/jupyterhub)
 
 ### Project
 
@@ -18,18 +18,18 @@ JupyterHub Tutorial - "Tutorial materials for deploying JupyterHub"
 
 ### Authenticators
 
-LDAPauthenticator - "Simple LDAP Authenticator Plugin for JupyterHub" [https://github.com/jupyterhub/ldapauthenticator]()
+LDAPauthenticator - "Simple LDAP Authenticator Plugin for JupyterHub" [https://github.com/jupyterhub/ldapauthenticator](https://github.com/jupyterhub/ldapauthenticator)
 
 OAuthenticator - "GitHub OAuth + JupyterHub Authenticator = OAuthenticator"
-[https://github.com/jupyterhub/oauthenticator]()
+[https://github.com/jupyterhub/oauthenticator](https://github.com/jupyterhub/oauthenticator)
 
 ### Spawners
 
-Batchspawner - "Custom Spawner for Jupyterhub to start servers in batch scheduled systems" [https://github.com/jupyterhub/batchspawner]()
+Batchspawner - "Custom Spawner for Jupyterhub to start servers in batch scheduled systems" [https://github.com/jupyterhub/batchspawner](https://github.com/jupyterhub/batchspawner)
 
-Dockerspawner - "Enables JupyterHub to spawn user servers in docker containers." [https://github.com/jupyterhub/dockerspawner]()
+Dockerspawner - "Enables JupyterHub to spawn user servers in docker containers." [https://github.com/jupyterhub/dockerspawner](https://github.com/jupyterhub/dockerspawner)
 
-Sudospawner - "enables JupyterHub to spawn single-user servers without being root, by spawning an intermediate process via sudo, which takes actions on behalf of the user" [https://github.com/jupyterhub/sudospawner]()
+Sudospawner - "enables JupyterHub to spawn single-user servers without being root, by spawning an intermediate process via sudo, which takes actions on behalf of the user" [https://github.com/jupyterhub/sudospawner](https://github.com/jupyterhub/sudospawner)
 
 ### Proxy
 
