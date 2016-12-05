@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python == 3.5
-  - jupyterhub == 0.6.1
+  - jupyterhub = 0.7
   - notebook >= 4.2
   - ipykernel >= 4.3
   - pip:
