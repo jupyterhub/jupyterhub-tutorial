@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
-source env
+source ./env
 exec jupyterhub $@
