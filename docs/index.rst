@@ -1,7 +1,7 @@
 Getting Started with JupyterHub Tutorial
 ========================================
 
-This tutorial is based on Min Ragan Kelly's `PyData London talk <https://youtu.be/gSVvxOchT8Y>`_.
+This tutorial is based on Min Ragan Kelley's `PyData London talk <https://youtu.be/gSVvxOchT8Y>`_.
 
 JupyterHub References
 ---------------------
