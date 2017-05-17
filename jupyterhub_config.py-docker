@@ -32,6 +32,15 @@ c.JupyterHub.spawner_class = DockerSpawner
 # tell the Hub to listen on its docker network.
 # netifaces is a convenience library to gather IP information.
 import netifaces
-docker0 = netifaces.ifaddresses('docker0')
-docker0_ipv4 = docker0[netifaces.AF_INET][0]
+import platform
+if platform.system() == 'Darwin':
+  lo0 = netifaces.ifaddresses('lo0')
+  try:
+    docker0_ipv4 = lo0[netifaces.AF_INET][1]
+  except IndexError:
+    raise Exception(("OSX hosts must add an additional IP to the loopback interface that the Docker container can access, "
+                     "e.g. 'sudo ifconfig lo0 alias 10.200.10.1/24'"))
+else:
+  docker0 = netifaces.ifaddresses('docker0')
+  docker0_ipv4 = docker0[netifaces.AF_INET][0]
 c.JupyterHub.hub_ip = docker0_ipv4['addr']
