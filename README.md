@@ -1,7 +1,7 @@
 # Getting Started with JupyterHub tutorial
 
-Based on a tutorial at PyData London 2016
-by Min Ragan-Kelley*, Thomas Kluyver, and Kyle Kelley.
+Updated for JupyterCon 2017
+by Carol Willing, Min Ragan-Kelley, Ryan , Yuvi Panda
 
 Follow along with [the PDF](./JupyterHub.pdf)
 or watch [the video on YouTube](https://youtu.be/gSVvxOchT8Y).
@@ -12,7 +12,7 @@ Clone this repo:
 
 You will need:
 
-- conda with Python 3
+- conda
 - jupyterhub
 - root access to a server or VM and/or docker
 

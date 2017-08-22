@@ -11,7 +11,7 @@ c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchai
 c.JupyterHub.port = 443
 
 # User whitelist - set of users allowed to use the Hub
-c.Authenticator.whitelist = {'minrk', 'takluyver'}
+c.Authenticator.whitelist = {'minrk', 'willingc', 'yuvipanda'}
 
 # Administrators - set of users who can administer the Hub itself
 c.Authenticator.admin_users = {'minrk'}
