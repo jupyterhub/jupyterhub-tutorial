@@ -6,12 +6,15 @@ Configuration for JupyterHub tutorial - used for local GitHub Authentication
 """
 
 # SSL and hub port
-c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
-c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
-c.JupyterHub.port = 443
+c.JupyterHub.ssl_key = 'jupyterhub.key'
+c.JupyterHub.ssl_cert = 'jupyterhub.crt'
+# or letsencrypt:
+# c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
+# c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
+# c.JupyterHub.port = 443
 
 # User whitelist - set of users allowed to use the Hub
-c.Authenticator.whitelist = {'minrk', 'takluyver'}
+c.Authenticator.whitelist = {'minrk', 'willingc', 'yuvipanda'}
 
 # Administrators - set of users who can administer the Hub itself
 c.Authenticator.admin_users = {'minrk'}
@@ -19,4 +22,4 @@ c.Authenticator.admin_users = {'minrk'}
 # Authenticator
 from oauthenticator.github import LocalGitHubOAuthenticator
 c.JupyterHub.authenticator_class = LocalGitHubOAuthenticator
-c.LocalGitHubOAuthenticator.create_system_users = True
+# c.LocalGitHubOAuthenticator.create_system_users = True

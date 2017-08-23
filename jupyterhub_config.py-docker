@@ -6,9 +6,12 @@ Configuration for JupyterHub tutorial - used for docker deployment
 """
 
 # SSL and hub port
-c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
-c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
-c.JupyterHub.port = 443
+c.JupyterHub.ssl_key = 'jupyterhub.key'
+c.JupyterHub.ssl_cert = 'jupyterhub.crt'
+# or letsencrypt:
+# c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
+# c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
+# c.JupyterHub.port = 443
 
 # User whitelist - set of users allowed to use the Hub
 c.Authenticator.whitelist = {'minrk', 'willingc', 'yuvipanda'}
@@ -34,13 +37,9 @@ c.JupyterHub.spawner_class = DockerSpawner
 import netifaces
 import platform
 if platform.system() == 'Darwin':
-  lo0 = netifaces.ifaddresses('lo0')
-  try:
-    docker0_ipv4 = lo0[netifaces.AF_INET][1]
-  except IndexError:
-    raise Exception(("OSX hosts must add an additional IP to the loopback interface that the Docker container can access, "
-                     "e.g. 'sudo ifconfig lo0 alias 10.200.10.1/24'"))
+    en0 = netifaces.ifaddresses('en0')
+    docker_ipv4 = en0[netifaces.AF_INET][0]
 else:
-  docker0 = netifaces.ifaddresses('docker0')
-  docker0_ipv4 = docker0[netifaces.AF_INET][0]
-c.JupyterHub.hub_ip = docker0_ipv4['addr']
+    docker0 = netifaces.ifaddresses('docker0')
+    docker_ipv4 = docker0[netifaces.AF_INET][0]
+c.JupyterHub.hub_ip = docker_ipv4['addr']

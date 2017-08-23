@@ -5,6 +5,10 @@ jupyterhub_config.py-ssl
 Configuration for JupyterHub tutorial - SSL Configuration
 """
 
-c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
-c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
-c.JupyterHub.port = 443
+c.JupyterHub.ssl_key = 'jupyterhub.key'
+c.JupyterHub.ssl_cert = 'jupyterhub.crt'
+# or letsencrypt:
+# c.JupyterHub.ssl_key = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/privkey.pem'
+# c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/hub-tutorial.jupyter.org/fullchain.pem'
+# public https port
+# c.JupyterHub.port = 443
