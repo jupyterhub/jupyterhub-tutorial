@@ -1,5 +1,8 @@
 # Getting Started with JupyterHub tutorial
 
+**Note: The [Zero to JupyterHub documentation](https://zero-to-jupyterhub.readthedocs.io)
+has a step-by-step walkthrough of setting up JupyterHub.**
+
 Updated for JupyterCon 2017
 by Carol Willing, Min Ragan-Kelley, Ryan , Yuvi Panda
 
